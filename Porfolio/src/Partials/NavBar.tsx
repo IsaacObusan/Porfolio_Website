@@ -24,11 +24,10 @@ const NavBar: React.FC = () => {
             </button>
             {isPortfolioOpen && (
               <ul className={`absolute left-0 mt-2 w-48 bg-gray-700 rounded-md shadow-lg py-1 z-10 transition-all duration-300 ease-in-out origin-top ${isPortfolioOpen ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0 transform'}`}>
-                <li><Link to="/coding" className="block px-4 py-2 text-sm text-white hover:bg-gray-600">Coding</Link></li>
+                <li><Link to="/coding" className="block px-4 py-2 text-sm text-white hover:bg-gray-600">Development</Link></li>
                 <li><Link to="/multimedia" className="block px-4 py-2 text-sm text-white hover:bg-gray-600">Multimedia</Link></li>
-                <li><Link to="/vfx" className="block px-4 py-2 text-sm text-white hover:bg-gray-600">Vfx</Link></li>
                 <li><Link to="/ux-ui" className="block px-4 py-2 text-sm text-white hover:bg-gray-600">UX/UI</Link></li>
-                <li><Link to="/3d-model" className="block px-4 py-2 text-sm text-white hover:bg-gray-600">3d Model</Link></li>
+ 
               </ul>
             )}
           </li>
