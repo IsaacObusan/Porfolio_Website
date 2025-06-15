@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import cvFile from '../assets/JOHN-ISAAC-C.-OBUSAN_CV_INTERNSHIP.pdf';
+import certificate1 from '../assets/certificate_1.jpg';
+import certificate2 from '../assets/certificate_2.jpg';
+import certificate3 from '../assets/certificate_3.jpg';
+import certificate4 from '../assets/certificate_4.jpg';
+import certificate5 from '../assets/certificate_5.png';
+import certificate6 from '../assets/certificate_6.png';
+import certificate7 from '../assets/certificate_7.png';
+import certificate8 from '../assets/certificate_8.png';
+import CertificateModal from '../components/CertificateModal';
 
 const About = () => {
+  const [selectedCertificate, setSelectedCertificate] = useState<{
+    image: string;
+    title: string;
+    date: string;
+  } | null>(null);
+
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = cvFile;
@@ -9,6 +24,10 @@ const About = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  };
+
+  const handleCertificateClick = (image: string, title: string, date: string) => {
+    setSelectedCertificate({ image, title, date });
   };
 
   return (
@@ -92,9 +111,176 @@ const About = () => {
                 </div>
               </div>
             </div>
+
+            {/* Certificates Section */}
+            <div className="mt-12">
+              <h2 className="text-2xl font-semibold text-gray-100 mb-6">Certificates</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Certificate 1 */}
+                <div 
+                  className="bg-gray-700 rounded-lg p-4 cursor-pointer transform hover:scale-105 transition-all duration-300 hover:bg-gray-600 group"
+                  onClick={() => handleCertificateClick(certificate1, "Figma & Beyond: Mastering UX UI Design Tools Smartly", "Udemy - June 9, 2025")}
+                >
+                  <div className="relative">
+                    <h3 className="text-xl font-medium text-gray-200 mb-2 group-hover:text-white">Figma & Beyond: Mastering UX UI Design Tools Smartly</h3>
+                    <p className="text-gray-300 group-hover:text-gray-200">Udemy - June 9, 2025</p>
+                    <img src={certificate1} alt="Certificate 1" className="mt-4 w-full h-48 object-cover rounded-lg group-hover:opacity-90" />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="bg-black bg-opacity-50 rounded-lg p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Certificate 2 */}
+                <div 
+                  className="bg-gray-700 rounded-lg p-4 cursor-pointer transform hover:scale-105 transition-all duration-300 hover:bg-gray-600 group"
+                  onClick={() => handleCertificateClick(certificate2, "Introduction to TypeScript", "Great Learning - June 10, 2025")}
+                >
+                  <div className="relative">
+                    <h3 className="text-xl font-medium text-gray-200 mb-2 group-hover:text-white">Introduction to TypeScript</h3>
+                    <p className="text-gray-300 group-hover:text-gray-200">Great Learning - June 10, 2025</p>
+                    <img src={certificate2} alt="Certificate 2" className="mt-4 w-full h-48 object-cover rounded-lg group-hover:opacity-90" />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="bg-black bg-opacity-50 rounded-lg p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Certificate 3 */}
+                <div 
+                  className="bg-gray-700 rounded-lg p-4 cursor-pointer transform hover:scale-105 transition-all duration-300 hover:bg-gray-600 group"
+                  onClick={() => handleCertificateClick(certificate8, "Creatives Seminar on Portfolio Making", "DTI, RDC & CNSC - March 11, 2025")}
+                >
+                  <div className="relative">
+                    <h3 className="text-xl font-medium text-gray-200 mb-2 group-hover:text-white">Creatives Seminar on Portfolio Making</h3>
+                    <p className="text-gray-300 group-hover:text-gray-200">DTI, RDC & CNSC - March 11, 2025</p>
+                    <img src={certificate8} alt="Certificate 3" className="mt-4 w-full h-48 object-cover rounded-lg group-hover:opacity-90" />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="bg-black bg-opacity-50 rounded-lg p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Certificate 4 */}
+                <div 
+                  className="bg-gray-700 rounded-lg p-4 cursor-pointer transform hover:scale-105 transition-all duration-300 hover:bg-gray-600 group"
+                  onClick={() => handleCertificateClick(certificate4, "Plaque of Appreciation - Best in Visual Effects", "Camarines Norte State College - May 7, 2024")}
+                >
+                  <div className="relative">
+                    <h3 className="text-xl font-medium text-gray-200 mb-2 group-hover:text-white">Plaque of Appreciation - Best in Visual Effects</h3>
+                    <p className="text-gray-300 group-hover:text-gray-200">Camarines Norte State College - May 7, 2024</p>
+                    <img src={certificate4} alt="Certificate 4" className="mt-4 w-full h-48 object-cover rounded-lg group-hover:opacity-90" />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="bg-black bg-opacity-50 rounded-lg p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Certificate 5 */}
+                <div 
+                  className="bg-gray-700 rounded-lg p-4 cursor-pointer transform hover:scale-105 transition-all duration-300 hover:bg-gray-600 group"
+                  onClick={() => handleCertificateClick(certificate5, "Certificate of Recognition - JC Media Committee", "Camarines Norte State College - August 31, 2023")}
+                >
+                  <div className="relative">
+                    <h3 className="text-xl font-medium text-gray-200 mb-2 group-hover:text-white">Certificate of Recognition - JC Media Committee</h3>
+                    <p className="text-gray-300 group-hover:text-gray-200">Camarines Norte State College - August 31, 2023</p>
+                    <img src={certificate5} alt="Certificate 5" className="mt-4 w-full h-48 object-cover rounded-lg group-hover:opacity-90" />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="bg-black bg-opacity-50 rounded-lg p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Certificate 6 */}
+                <div 
+                  className="bg-gray-700 rounded-lg p-4 cursor-pointer transform hover:scale-105 transition-all duration-300 hover:bg-gray-600 group"
+                  onClick={() => handleCertificateClick(certificate6, "Certificate of Participation - AppCon 2023", "Otis Japan Inc. - June 30, 2024")}
+                >
+                  <div className="relative">
+                    <h3 className="text-xl font-medium text-gray-200 mb-2 group-hover:text-white">Certificate of Participation - AppCon 2023</h3>
+                    <p className="text-gray-300 group-hover:text-gray-200">Otis Japan Inc. - June 30, 2024</p>
+                    <img src={certificate6} alt="Certificate 6" className="mt-4 w-full h-48 object-cover rounded-lg group-hover:opacity-90" />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="bg-black bg-opacity-50 rounded-lg p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Certificate 7 */}
+                <div 
+                  className="bg-gray-700 rounded-lg p-4 cursor-pointer transform hover:scale-105 transition-all duration-300 hover:bg-gray-600 group"
+                  onClick={() => handleCertificateClick(certificate7, "From Scroll to Skill - AI Seminar", "ICT Council of Camarines Norte - March 14, 2025")}
+                >
+                  <div className="relative">
+                    <h3 className="text-xl font-medium text-gray-200 mb-2 group-hover:text-white">From Scroll to Skill - AI Seminar</h3>
+                    <p className="text-gray-300 group-hover:text-gray-200">ICT Council of Camarines Norte - March 14, 2025</p>
+                    <img src={certificate7} alt="Certificate 7" className="mt-4 w-full h-48 object-cover rounded-lg group-hover:opacity-90" />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="bg-black bg-opacity-50 rounded-lg p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Certificate 8 */}
+                <div 
+                  className="bg-gray-700 rounded-lg p-4 cursor-pointer transform hover:scale-105 transition-all duration-300 hover:bg-gray-600 group"
+                  onClick={() => handleCertificateClick(certificate3, "Video Editing Basics", "Great Learning - May 2025")}
+                >
+                  <div className="relative">
+                    <h3 className="text-xl font-medium text-gray-200 mb-2 group-hover:text-white">Video Editing Basics</h3>
+                    <p className="text-gray-300 group-hover:text-gray-200">Great Learning - May 2025</p>
+                    <img src={certificate3} alt="Certificate 8" className="mt-4 w-full h-48 object-cover rounded-lg group-hover:opacity-90" />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="bg-black bg-opacity-50 rounded-lg p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      {selectedCertificate && (
+        <CertificateModal
+          isOpen={!!selectedCertificate}
+          onClose={() => setSelectedCertificate(null)}
+          image={selectedCertificate.image}
+          title={selectedCertificate.title}
+          date={selectedCertificate.date}
+        />
+      )}
     </div>
   );
 };
