@@ -9,8 +9,6 @@ Welcome to the future of digital portfolios. This project represents a cutting-e
 
 
 ## ⚡ Core Technologies
-// ... existing code ...
-## ⚡ Core Technologies
 
 ```mermaid![Porfolio Showcase](https://github.com/user-attachments/assets/c57baaca-40d0-4f0f-87d5-cec614432dce)
 
