@@ -22,11 +22,11 @@ graph TD
 ## 🎮 Interactive Features
 
 ### 🎯 Multi-Dimensional Portfolio Sections
-- **Code Matrix** - Showcasing programming prowess
-- **Media Nexus** - A gallery of multimedia masterpieces
-- **VFX Universe** - Visual effects and motion graphics
-- **UX/UI Lab** - Interface design innovations
-- **3D Dimension** - Three-dimensional modeling and animation
+- **Code ** - Showcasing programming prowess
+- **Media ** - A gallery of multimedia masterpieces
+- **VFX ** - Visual effects and motion graphics
+- **UX/UI ** - Interface design innovations
+- **3D ** - Three-dimensional modeling and animation
 
 ### 🎨 Design Elements
 - Quantum-responsive layouts
