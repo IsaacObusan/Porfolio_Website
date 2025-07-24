@@ -5,13 +5,7 @@
 
 Welcome to my official portfolio website. This site serves as a digital showcase of my creative and technical projects—from multimedia content to web development. Built with a modern tech stack and responsive design, this portfolio reflects both my personal style and professional capabilities.
 
-## ✨ Key Features
 
-- Sleek, responsive user interface
-- Voice-enabled search functionality
-- Smooth navigation with tabbed content display
-- Custom visuals and branding
-- Project highlights and descriptions
 
 ## 🛠️ Tech Stack
 
