@@ -1,5 +1,6 @@
 import React from 'react';
 import Ebook from '../assets/Ebook.png';
+import PureDrop from '../assets/PureDrop.jpg';
 import Baybayin from '../assets/Baybayin.png';
 import EOS from '../assets/EOS.png';
 import Express from '../assets/Express.png';
@@ -88,6 +89,15 @@ const UXUI: React.FC = () => {
               <h3 className="mb-2 text-xl font-semibold text-gray-100">FoodWaste</h3>
               <p className="mb-2 text-gray-300">A mobile app for reducing food waste by connecting surplus food providers with those in need. Features a user-friendly interface and real-time updates.</p>
               <a href="https://www.figma.com/design/5JJcpPuQ5VFrJ4wUXBqOQh/MDRRMO?m=auto&t=Vn1kIp4tfnbydbis-6" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View on Figma</a>
+            </div>
+            {/* PureDrop Mobile App */}
+            <div className="flex flex-col p-4 bg-gray-700 rounded-lg max-w-md mx-auto">
+              <div className="flex items-center justify-center mb-4 bg-gray-600 rounded-lg w-full h-48 overflow-hidden">
+                <img src={PureDrop} alt="PureDrop Mobile App Cover" className="object-contain w-full h-full rounded-lg" />
+              </div>
+              <h3 className="mb-2 text-xl font-semibold text-gray-100">PureDrop Mobile App</h3>
+              <p className="mb-2 text-gray-300">𝚃𝚑𝚒𝚜 𝚖𝚘𝚋𝚒𝚕𝚎 𝚊𝚙𝚙 𝚒𝚜 𝚌𝚛𝚎𝚊𝚝𝚎𝚍 𝚝𝚘 𝚖𝚊𝚗𝚊𝚐𝚎 𝙿𝚞𝚛𝚎𝙳𝚛𝚘𝚙, 𝚊𝚗 𝙰𝚛𝚍𝚞𝚒𝚗𝚘-𝚋𝚊𝚜𝚎𝚍 𝚜𝚢𝚜𝚝𝚎𝚖 𝚌𝚘𝚗𝚟𝚎𝚛𝚝𝚒𝚗𝚐 𝚛𝚊𝚒𝚗𝚠𝚊𝚝𝚎𝚛 𝚒𝚗𝚝𝚘 𝚍𝚛𝚒𝚗𝚔𝚊𝚋𝚕𝚎 𝚠𝚊𝚝𝚎𝚛. 𝙸𝚝 𝚊𝚌𝚝𝚜 𝚊𝚜 𝚊 𝚍𝚊𝚝𝚊 𝚑𝚞𝚋 𝚏𝚘𝚛 𝚠𝚊𝚝𝚎𝚛 𝚚𝚞𝚊𝚕𝚒𝚝𝚢 𝚒𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗 𝚠𝚒𝚝𝚑𝚒𝚗 𝚝𝚑𝚎 𝙰𝚛𝚍𝚞𝚒𝚗𝚘 𝚜𝚎𝚝𝚞𝚙. 𝚃𝚑𝚎 𝚊𝚙𝚙 𝚒𝚜 𝚒𝚗 𝚙𝚛𝚘𝚐𝚛𝚎𝚜𝚜 𝚊𝚗𝚍 𝚎𝚡𝚙𝚎𝚌𝚝𝚜 𝚊𝚍𝚍𝚒𝚝𝚒𝚘𝚗𝚊𝚕 𝚏𝚎𝚊𝚝𝚞𝚛𝚎𝚜 𝚒𝚗 𝚝𝚑𝚎 𝚏𝚞𝚝𝚞𝚛𝚎.</p>
+              <a href="https://github.com/IsaacObusan/PureDrop" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View on GitHub</a>
             </div>
           </div>
         </div>

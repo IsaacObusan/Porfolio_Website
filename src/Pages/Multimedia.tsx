@@ -16,6 +16,7 @@ import Soulbound from '../assets/Soulbound.mp4';
 import ThreeD1 from '../assets/3D_1.mp4';
 import ThreeD2 from '../assets/3D_2.mp4';
 import ThreeD3 from '../assets/3D_3.mp4';
+import ThreeDDrone from '../assets/3D_Drone.mp4';
 import Poster7 from '../assets/POSTER-7.png';
 import Poster8 from '../assets/POSTER -8.png';
 import Poster9 from '../assets/POSTER-9.png';
@@ -188,7 +189,7 @@ const Multimedia: React.FC = () => {
         {/* 3D Model Section */}
         <section className="mb-12">
           <h2 className="pb-2 mb-6 text-3xl font-bold text-gray-100 border-b border-gray-700">3D Models</h2>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             <div className="overflow-hidden bg-gray-800 rounded-lg shadow-lg">
               <div className="relative bg-gray-700 aspect-video">
                 <video
@@ -240,6 +241,25 @@ const Multimedia: React.FC = () => {
                 <div className="flex flex-wrap gap-2">
                   <span className="px-2 py-1 text-xs text-white bg-purple-600 rounded">Blender</span>
                   <span className="px-2 py-1 text-xs text-white bg-orange-600 rounded">Animation</span>
+                </div>
+              </div>
+            </div>
+            <div className="overflow-hidden bg-gray-800 rounded-lg shadow-lg">
+              <div className="relative bg-gray-700 aspect-video">
+                <video
+                  src={ThreeDDrone}
+                  controls
+                  className="object-cover w-full h-full rounded-t-lg"
+                  poster=""
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="mb-2 text-lg font-semibold text-gray-100">3D Drone Model</h3>
+                <p className="mb-3 text-sm text-gray-300">A 3D drone model and animation project.</p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-2 py-1 text-xs text-white bg-purple-600 rounded">Blender</span>
+                  <span className="px-2 py-1 text-xs text-white bg-blue-600 rounded">3D Modeling</span>
+                  <span className="px-2 py-1 text-xs text-white bg-green-600 rounded">Drone</span>
                 </div>
               </div>
             </div>
