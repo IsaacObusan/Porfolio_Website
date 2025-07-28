@@ -18,8 +18,8 @@ const UXUI: React.FC = () => {
           <h2 className="mb-6 text-2xl font-bold text-gray-100">Figma Projects</h2>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {/* FurnHub */}
-            <div className="flex flex-col p-4 bg-gray-700 rounded-lg max-w-md mx-auto">
-              <div className="flex items-center justify-center mb-4 bg-gray-600 rounded-lg w-full h-48 overflow-hidden">
+            <div className="flex flex-col max-w-md p-4 mx-auto bg-gray-700 rounded-lg">
+              <div className="flex items-center justify-center w-full h-48 mb-4 overflow-hidden bg-gray-600 rounded-lg">
                 <img src={Furnhub} alt="FurnHub Cover" className="object-contain w-full h-full rounded-lg" />
               </div>
               <h3 className="mb-2 text-xl font-semibold text-gray-100">FurnHub</h3>
@@ -27,8 +27,8 @@ const UXUI: React.FC = () => {
               <a href="https://www.figma.com/design/UP08KUzOXJqsJlfzAgUtzr/Furnhub?m=auto&t=Vn1kIp4tfnbydbis-6" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View on Figma</a>
             </div>
             {/* EOS */}
-            <div className="flex flex-col p-4 bg-gray-700 rounded-lg max-w-md mx-auto">
-              <div className="flex items-center justify-center mb-4 bg-gray-600 rounded-lg w-full h-48 overflow-hidden">
+            <div className="flex flex-col max-w-md p-4 mx-auto bg-gray-700 rounded-lg">
+              <div className="flex items-center justify-center w-full h-48 mb-4 overflow-hidden bg-gray-600 rounded-lg">
                 <img src={EOS} alt="EOS Cover" className="object-contain w-full h-full rounded-lg" />
               </div>
               <h3 className="mb-2 text-xl font-semibold text-gray-100">EOS</h3>
@@ -36,8 +36,8 @@ const UXUI: React.FC = () => {
               <a href="https://www.figma.com/design/juj0K9wvfkjvDutKyciqsE/EOS?m=auto&t=Vn1kIp4tfnbydbis-6" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View on Figma</a>
             </div>
             {/* Baybayin Mobile Application */}
-            <div className="flex flex-col p-4 bg-gray-700 rounded-lg max-w-md mx-auto">
-              <div className="flex items-center justify-center mb-4 bg-gray-600 rounded-lg w-full h-48 overflow-hidden">
+            <div className="flex flex-col max-w-md p-4 mx-auto bg-gray-700 rounded-lg">
+              <div className="flex items-center justify-center w-full h-48 mb-4 overflow-hidden bg-gray-600 rounded-lg">
                 <img src={Baybayin} alt="Baybayin Mobile Application Cover" className="object-contain w-full h-full rounded-lg" />
               </div>
               <h3 className="mb-2 text-xl font-semibold text-gray-100">Baybayin Mobile Application</h3>
@@ -45,8 +45,8 @@ const UXUI: React.FC = () => {
               <a href="https://www.figma.com/design/jT8TQFyZ1AEz7QXeAUNDmk/BAYBAYIN-QUEST?node-id=1-3773&p=f&t=FmLgImDgLTvRCfxw-0" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View on Figma</a>
             </div>
             {/* E-Book Mobile Application */}
-            <div className="flex flex-col p-4 bg-gray-700 rounded-lg max-w-md mx-auto">
-              <div className="flex items-center justify-center mb-4 bg-gray-600 rounded-lg w-full h-48 overflow-hidden">
+            <div className="flex flex-col max-w-md p-4 mx-auto bg-gray-700 rounded-lg">
+              <div className="flex items-center justify-center w-full h-48 mb-4 overflow-hidden bg-gray-600 rounded-lg">
                 <img src={Ebook} alt="E-Book Mobile Application Cover" className="object-contain w-full h-full rounded-lg" />
               </div>
               <h3 className="mb-2 text-xl font-semibold text-gray-100">E-Book Mobile Application</h3>
@@ -54,8 +54,8 @@ const UXUI: React.FC = () => {
               <a href="https://www.figma.com/design/NVwmEsQuKC5lnnsjfx23rU/E-Bookabularyo?m=auto&t=Vn1kIp4tfnbydbis-6" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View on Figma</a>
             </div>
             {/* MDRRMO */}
-            <div className="flex flex-col p-4 bg-gray-700 rounded-lg max-w-md mx-auto">
-              <div className="flex items-center justify-center mb-4 bg-gray-600 rounded-lg w-full h-48 overflow-hidden">
+            <div className="flex flex-col max-w-md p-4 mx-auto bg-gray-700 rounded-lg">
+              <div className="flex items-center justify-center w-full h-48 mb-4 overflow-hidden bg-gray-600 rounded-lg">
                 <img src={MDRRMO} alt="MDRRMO Cover" className="object-contain w-full h-full rounded-lg" />
               </div>
               <h3 className="mb-2 text-xl font-semibold text-gray-100">MDRRMO</h3>
@@ -63,8 +63,8 @@ const UXUI: React.FC = () => {
               <a href="https://www.figma.com/design/5JJcpPuQ5VFrJ4wUXBqOQh/MDRRMO?m=auto&t=Vn1kIp4tfnbydbis-6" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View on Figma</a>
             </div>
             {/* Moa Controller */}
-            <div className="flex flex-col p-4 bg-gray-700 rounded-lg max-w-md mx-auto">
-              <div className="flex items-center justify-center mb-4 bg-gray-600 rounded-lg w-full h-48 overflow-hidden">
+            <div className="flex flex-col max-w-md p-4 mx-auto bg-gray-700 rounded-lg">
+              <div className="flex items-center justify-center w-full h-48 mb-4 overflow-hidden bg-gray-600 rounded-lg">
                 <img src={MOA} alt="Moa Controller Cover" className="object-contain w-full h-full rounded-lg" />
               </div>
               <h3 className="mb-2 text-xl font-semibold text-gray-100">Moa Controller</h3>
@@ -72,8 +72,8 @@ const UXUI: React.FC = () => {
               <a href="https://www.figma.com/design/tommvJ0ONhhDxaBhUqlGbW/MOA-CONTROLLER?m=auto&t=Vn1kIp4tfnbydbis-6" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View on Figma</a>
             </div>
             {/* Express Delivery Mobile Application */}
-            <div className="flex flex-col p-4 bg-gray-700 rounded-lg max-w-md mx-auto">
-              <div className="flex items-center justify-center mb-4 bg-gray-600 rounded-lg w-full h-48 overflow-hidden">
+            <div className="flex flex-col max-w-md p-4 mx-auto bg-gray-700 rounded-lg">
+              <div className="flex items-center justify-center w-full h-48 mb-4 overflow-hidden bg-gray-600 rounded-lg">
                 <img src={Express} alt="Express Delivery Mobile Application Cover" className="object-contain w-full h-full rounded-lg" />
               </div>
               <h3 className="mb-2 text-xl font-semibold text-gray-100">Express Delivery Mobile Application</h3>
@@ -82,8 +82,8 @@ const UXUI: React.FC = () => {
           
             </div>
             {/* FoodWaste */}
-            <div className="flex flex-col p-4 bg-gray-700 rounded-lg max-w-md mx-auto">
-              <div className="flex items-center justify-center mb-4 bg-gray-600 rounded-lg w-full h-48 overflow-hidden">
+            <div className="flex flex-col max-w-md p-4 mx-auto bg-gray-700 rounded-lg">
+              <div className="flex items-center justify-center w-full h-48 mb-4 overflow-hidden bg-gray-600 rounded-lg">
                 <img src={Foodwaste} alt="FoodWaste Cover" className="object-contain w-full h-full rounded-lg" />
               </div>
               <h3 className="mb-2 text-xl font-semibold text-gray-100">FoodWaste</h3>
@@ -91,8 +91,8 @@ const UXUI: React.FC = () => {
               <a href="https://www.figma.com/design/5JJcpPuQ5VFrJ4wUXBqOQh/MDRRMO?m=auto&t=Vn1kIp4tfnbydbis-6" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View on Figma</a>
             </div>
             {/* PureDrop Mobile App */}
-            <div className="flex flex-col p-4 bg-gray-700 rounded-lg max-w-md mx-auto">
-              <div className="flex items-center justify-center mb-4 bg-gray-600 rounded-lg w-full h-48 overflow-hidden">
+            <div className="flex flex-col max-w-md p-4 mx-auto bg-gray-700 rounded-lg">
+              <div className="flex items-center justify-center w-full h-48 mb-4 overflow-hidden bg-gray-600 rounded-lg">
                 <img src={PureDrop} alt="PureDrop Mobile App Cover" className="object-contain w-full h-full rounded-lg" />
               </div>
               <h3 className="mb-2 text-xl font-semibold text-gray-100">PureDrop Mobile App</h3>
