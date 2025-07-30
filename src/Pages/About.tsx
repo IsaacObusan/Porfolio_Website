@@ -8,6 +8,7 @@ import certificate5 from '../assets/certificate_5.png';
 import certificate6 from '../assets/certificate_6.png';
 import certificate7 from '../assets/certificate_7.png';
 import certificate8 from '../assets/certificate_8.png';
+import chick from '../assets/chick.png';
 import CertificateModal from '../components/CertificateModal';
 
 const About = () => {
@@ -47,54 +48,11 @@ const About = () => {
         </div>
         <div className="p-6 bg-gray-800 rounded-lg shadow-lg">
           <div className="prose max-w-none">
-            <p className="mb-4 text-lg text-gray-100">
-              Hello! I'm a passionate Frontend developer  with expertise in various fields including coding, multimedia, VFX, UX/UI design, and 3D modeling.
+            <p className="mb-4 text-2xl italic text-gray-100">
+              I'm John Isaac C. Obusan, a multimedia specialist with a strong foundation in full stack development. 
+              My primary expertise lies in UX design and frontend development, where I blend creativity and technical skill to deliver engaging digital experiences.
             </p>
-            <p className="mb-4 text-lg text-gray-100">
-              My journey in technology and design has equipped me with a unique perspective that combines technical expertise with creative problem-solving skills.
-            </p>
-            <div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2">
-              <div>
-                <h2 className="mb-4 text-2xl font-semibold text-gray-100">Skills</h2>
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="mb-2 text-xl font-medium text-gray-200">Development</h3>
-                    <ul className="text-gray-100 list-disc list-inside">
-                      <li>Frontend Development</li>
-                      <li>React TypeScript</li>
-                      <li>Python</li>
-                      <li>VB.NET</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 className="mb-2 text-xl font-medium text-gray-200">Design & Creative</h3>
-                    <ul className="text-gray-100 list-disc list-inside">
-                      <li>UI/UX Design</li>
-                      <li>Graphic Design</li>
-                      <li>Figma</li>
-                      <li>Adobe Photoshop</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 className="mb-2 text-xl font-medium text-gray-200">Video & Multimedia</h3>
-                    <ul className="text-gray-100 list-disc list-inside">
-                      <li>Videography</li>
-                      <li>Photography</li>
-                      <li>Video Editing</li>
-                      <li>Photo Editing</li>
-                      <li>Adobe Premiere Pro</li>
-                      <li>After Effects</li>
-                      <li>Adobe Photoshop</li>
-                      <li>Adobe Illustrator</li>
-                      <li>Blender</li>
-                    
-                    </ul>
-                  </div>
-                </div>
-              </div>
-             
-            </div>
-
+       
             {/* Certificates Section */}
             <div className="mt-12">
               <h2 className="mb-6 text-2xl font-semibold text-gray-100">Certificates</h2>
